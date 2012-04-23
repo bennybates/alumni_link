@@ -1,0 +1,51 @@
+<% provide(:title, 'Job Search Results') %>
+    <h1>Job Search Results</h1>
+	<div class="row">
+		<div class="span10">
+		    <p class="lead">Jobs</p>
+		</div>
+		<div class="span2">
+	    <div id="myModal" class="modal hide fade in" style="display: none; ">
+		    <div class="modal-header">
+			    <a class="close" data-dismiss="modal">×</a>
+			    <h3>Set an Alert</h3>
+		    </div>
+		    <div class="modal-body">
+			    <input type="text" class="span3" placeholder="Product Manager">
+		    </div>
+		    <div class="modal-footer">
+			    <a href="#" class="btn" data-dismiss="modal">Close</a>
+			    <a href="#" class="btn" data-dismiss="modal">Save changes</a>
+		    </div>
+	    </div>
+		<a class="btn btn-primary btn-large" href="#myModal" data-toggle="modal">Set an alert...</a>
+		</div>
+	</div>
+	<div class="row">
+		<div class="span12">
+			<h3><%= link_to "Senior Product Manager - Fixed Income - FFAS", 'product' %> - Fidelity</h3> 
+			<div class="offset1">
+				<p>3 Alumni Currently working at Fidelity<br>
+				7 Alumni Connected to Fidelity</p>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="span12">
+			<h3><%= link_to "Product Manager", '#' %> - State Street</h3> 
+			<div class="offset1">
+				<p>2 Alumni Currently working at State Street<br>
+				5 Alumni Connected to State Street</p>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="span12">
+			<h3><%= link_to "Product Manager", '#' %> - Reebok</h3> 
+			<div class="offset1">
+				<p>4 Alumni Currently working at Reebok<br>
+				2 Alumni Connected to Reebok</p>
+			</div>	
+		</div>
+	</div>
+		<script src="bootstrap-modal.js"></script>  

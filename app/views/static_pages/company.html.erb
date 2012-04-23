@@ -1,0 +1,127 @@
+<% provide(:title, 'Company Results') %>
+    <h1>Company Results</h1>
+    <div class="row">
+		<div class="span9">
+			<div class = "company strong">Fidelity</div>
+		</div>
+		<div class="span2">
+	    <div id="myModal" class="modal hide fade in" style="display: none; ">
+		    <div class="modal-header">
+			    <a class="close" data-dismiss="modal">×</a>
+			    <h3>Set an Alert</h3>
+		    </div>
+		    <div class="modal-body">
+			    <input type="text" class="span3" placeholder="Fidelity">
+		    </div>
+		    <div class="modal-footer">
+			    <a href="#" class="btn" data-dismiss="modal">Close</a>
+			    <a href="#" class="btn" data-dismiss="modal">Save changes</a>
+		    </div>
+	    </div>
+		<a class="btn btn-primary btn-large" href="#myModal" data-toggle="modal">Set an alert...</a>
+		</div>
+	</div>
+	<div class="row">
+		<div class="span12">
+			<div class="lead">Available Positions</div>
+			<div class="positions">
+				<p><%= link_to "Senior Product Manager - Fixed Income - FFAS", 'http://www.linkedin.com/jobs?viewJob=&jobId=2829948' %></p>
+				<p><%= link_to "Account & Operations Manager", 'http://www.linkedin.com/jobs?viewJob=&jobId=2818403' %></p>
+				<p><%= link_to "Principal Data Scientist", 'http://www.linkedin.com/jobs?viewJob=&jobId=2891796' %></p>
+			</div>
+			<h5><%= link_to "See more jobs", '#' %></h5>
+		</div>
+	</div><div><br><br></div>
+	<div class="row">
+		<div class="span12">
+		<div class="lead">Alumni Connections</div>
+		<h3>Currently Working at Fidelity</h3>
+	</div></div>
+	<div class="row">
+		<div class="span12">
+			<div class="span5 well">
+				<div class="span1 thumbnail">
+    				<%= image_tag("Lucy.jpg", alt: "Ben") %>
+				</div>
+				<h4 class="connection"><%= link_to "Lucy Ebersold", 'connect' %></h4>
+				<p>Carroll School of Management 2009 - 2011<br>
+				Current position: Product Manager<br>
+					<a href="#connectModal" data-toggle="modal">Connect </a><i class='icon-plus'></i></p>
+		    	<div id="connectModal" class="modal hide fade in" style="display: none; ">
+				    <div class="modal-header">
+					    <a class="close" data-dismiss="modal">×</a>
+					    <h3>Connect</h3>
+					</div>
+		    		<div class="modal-body">
+	    				<textarea id="textarea" class="span6" rows="10">Hello Lucy,
+	I am a current student at Carroll School of Management and I found you through Alumni Link which connects CSOM students in search of jobs with alumni. I am currently interested in a position at Fidelity and noticed that you currently work there as a Product Manager. I was wondering if I could chat with you briefly about Fidelity and any insight you might have regarding my job search. Thank you in advance for your time.
+
+	Sincerely,
+	Benjamin Bates</textarea>
+		    		</div>
+		    		<div class="modal-footer">
+					    <a href="#" class="btn" data-dismiss="modal">Close</a>
+					    <a href="#" class="btn" data-dismiss="modal">Submit</a>
+		    		</div>
+	    		</div>
+			</div>
+		<div class="span5 well">
+			<div class="span1 thumbnail">
+    			<%= image_tag("blank.png", alt: "Ben") %>
+			</div>
+			<h4 class="connection"><%= link_to "Frank Frederickson", '#' %></h4>
+			<p>Carroll School of Management 2009 - 2011<br>
+			Current position: Finance<br>
+			<a href="#connectModal" data-toggle="modal">Connect </a><i class='icon-plus'></i>
+		</div>
+	</div>
+	</div>
+	<div class="row">
+		<div class="span12">
+		<h3>Connected to Fidelity</h3>
+	</div></div>
+	<div class="row">
+		<div class="span12">
+			<div class="span5 well">
+				<div class="span1 thumbnail">
+		    		<%= image_tag("blank.png", alt: "Ben") %>
+				</div>
+				<h4 class="connection"><%= link_to "John Johnson", '#' %></h4>
+				<p>Carroll School of Management 2007 - 2011<br>
+					Number of connections at Fidelity: 5<br>
+				<%= link_to "Connect ", '#' %><i class='icon-plus'></i></p>
+			</div>
+			<div class="span5 well">
+				<div class="span1 thumbnail">
+    				<%= image_tag("vinod.jpg", alt: "Ben") %>
+				</div>
+				<h4 class="connection"><%= link_to "Vinod Paluri", '#' %></h4>
+				<p>Carroll School of Management 2004 - 2007<br>
+					Number of connections at Fidelity: 7<br>
+				<%= link_to "Connect ", '#' %><i class='icon-plus'></i></p>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="span12">
+			<div class="span5 well">
+				<div class="span1 thumbnail">
+    				<%= image_tag("erin.jpg", alt: "Ben") %>
+				</div>
+				<h4 class="connection"><%= link_to "Erin Burke", '#' %></h4>
+				<p>Carroll School of Management 2009 - 2011<br>
+					Number of connections at Fidelity: 4<br>
+				<%= link_to "Connect ", '#' %><i class='icon-plus'></i></p>
+			</div>
+			<div class="span5 well">
+				<div class="span1 thumbnail">
+    				<%= image_tag("blank.png", alt: "Ben") %>
+				</div>
+				<h4 class="connection"><%= link_to "Phil Jackson", '#' %></h4>
+				<p>Carroll School of Management 2000 - 2003<br>
+					Number of connections at Fidelity: 2<br>
+				<%= link_to "Connect ", '#' %><i class='icon-plus'></i></p>
+			</div>
+		</div>
+	</div>
+	<script src="bootstrap-modal.js"></script>  

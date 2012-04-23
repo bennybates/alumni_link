@@ -1,0 +1,146 @@
+@import "bootstrap";
+
+/* mixins, variables, etc. */
+
+$grayMediumLight: #eaeaea;
+$maroon: #640f1e;
+
+/* universal */
+
+html {
+  overflow-y: scroll;
+}
+
+body {
+  padding-top: 60px;
+  }
+.navbar-inner {
+  background-color: $maroon;
+  color: $maroon;
+      background-image: -moz-linear-gradient(center top , $maroon, $maroon);
+    background-repeat: repeat-x;
+}
+
+section {
+  overflow: auto;
+}
+
+textarea {
+  resize: vertical;
+  width: 700px;
+}
+
+.center {
+  text-align: center;
+  h1 {
+    margin-bottom: 10px;
+  }
+}
+
+.thumbnail {
+  margin-left: 0;
+   margin-right: 15px;
+}
+
+/* typography */
+
+a {
+  color: #0088CC;
+  &:visited {
+    color: #0088CC; }
+  &:hover {
+    color: #006699;
+    background-color: white;
+ } }
+
+.connection, .positions {
+    font-size: 20px;
+}
+
+.connect:visited, .connect:hover, .connect {
+  color: white;
+}
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.5;
+}
+
+h1 {
+  font-size: 3em;
+  letter-spacing: -2px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.7em;
+  letter-spacing: -1px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: normal;
+  color: $grayLight;
+}
+
+p {
+  font-size: 1.1em;
+  line-height: 1.7em;
+}
+
+.positions p {
+    line-height: 1.2em;
+    margin: 0;
+}
+
+.company {
+    font-size: 3em;
+    letter-spacing: -2px;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.lead {
+  margin-bottom: 3px;
+}
+/* header */
+
+#logo {
+  float: left;
+  margin-right: 10px;
+  font-size: 1.7em;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  padding-top: 9px;
+  font-weight: bold;
+  line-height: 1;
+  &:hover {
+    color: white;
+    text-decoration: none;
+    background-color: $maroon;
+  }
+}
+
+/* footer */
+
+footer {
+  margin-top: 45px;
+  padding-top: 5px;
+  border-top: 1px solid $grayMediumLight;
+  color: $grayLight;
+  a {
+    color: $blue;
+    &:hover { 
+      color: $grayDarker;
+    }
+  }  
+  small { 
+    float: left; 
+  }
+  ul {
+    float: right;
+    list-style: none;
+    li {
+      float: left;
+      margin-left: 10px;
+    }
+  }
+}

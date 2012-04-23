@@ -1,0 +1,16 @@
+  <div class="center hero-unit">  
+    <h1>Welcome to Alumni Link</h1>
+    <h2>
+	Please log in with LinkedIn to begin
+    </h2>
+
+    <div class="row">
+	    <div id="myModal" class="modal hide fade in" style="display: none; ">
+		    <div class="modal-body">
+	    <%= link_to image_tag("login.png", alt: "Login"), search_path %>
+		    </div>
+	    </div>
+		<a class="btn btn-primary btn-large" href="#myModal" data-toggle="modal">Sign in with LinkedIn</a>
+	</div>
+</div>
+		<script src="bootstrap-modal.js"></script>  
