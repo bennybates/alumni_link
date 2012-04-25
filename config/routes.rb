@@ -10,6 +10,8 @@ AlumniConnect::Application.routes.draw do
   
   root to: 'static_pages#home'
   match '/help',     to: 'static_pages#help'
+  match '/team',     to: 'static_pages#team'
+  match '/mobile',     to: 'static_pages#mobile'
   match '/connect',  to: 'static_pages#connect'
   match '/product',  to: 'static_pages#product'
   match '/contact',  to: 'static_pages#contact'

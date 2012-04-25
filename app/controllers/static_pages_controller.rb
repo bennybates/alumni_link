@@ -7,4 +7,8 @@ class StaticPagesController < ApplicationController
 
   def about
   end
+
+  def mobile
+	render :layout => "mobile"
+  end
 end
